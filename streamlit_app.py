@@ -1,4 +1,5 @@
 import streamlit as st
+import math, time
 
 st.title("_Kalkulator_ :blue[Sederhana] :rocket:")
 
@@ -35,5 +36,9 @@ elif operation == "Pembagian":
     result = divide(num1, num2)
 
 if st.button("Hitung"):
+    loading = st.progress(0)
+    for i in range(100):
+        time.sleep(0.01)
+        loading.progress(i+1)
     st.success(f"Hasil: {result}")
   
