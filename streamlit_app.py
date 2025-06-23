@@ -2,38 +2,38 @@ import streamlit as st
 
 st.title("_Kalkulator_ :blue[Sederhana] :sunglasses:")
 
-# Define a function for addition
+# Definisikan fungsi untuk penjumlahan
 def add(x, y):
     return x + y
 
-# Define a function for subtraction
+# Definisikan fungsi untuk pengurangan
 def subtract(x, y):
     return x - y
 
-# Define a function for multiplication
+# Definisikan fungsi untuk perkalian
 def multiply(x, y):
     return x * y
 
-# Define a function for division
+# Definisikan fungsi untuk pembagian
 def divide(x, y):
     if y == 0:
-        return "Cannot divide by zero!"
+        return "Tidak dapat membagi dengan nol!"
     return x / y
 
-operation = st.selectbox("Select operation", ("Addition", "Subtraction", "Multiplication", "Division"))
+operation = st.selectbox("Pilih operasi", ("Penjumlahan", "Pengurangan", "Perkalian", "Pembagian"))
 
-num1 = st.number_input("Enter first number")
-num2 = st.number_input("Enter second number")
+num1 = st.number_input("Masukkan angka pertama")
+num2 = st.number_input("Masukkan angka kedua")
 
-if operation == "Addition":
+if operation == "Penjumlahan":
     result = add(num1, num2)
-elif operation == "Subtraction":
+elif operation == "Pengurangan":
     result = subtract(num1, num2)
-elif operation == "Multiplication":
+elif operation == "Perkalian":
     result = multiply(num1, num2)
-elif operation == "Division":
+elif operation == "Pembagian":
     result = divide(num1, num2)
 
-if st.button("Calculate"):
+if st.button("Hitung"):
     st.success(f"Result: {result}")
   
