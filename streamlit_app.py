@@ -38,7 +38,7 @@ elif operation == "Pembagian":
 if st.button("Hitung"):
     loading = st.progress(0)
     for i in range(100):
-        time.sleep(0.0001)
+        time.sleep(0.01)
         loading.progress(i+1)
     st.success(f"Hasil: {result}")
   
