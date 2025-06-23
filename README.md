@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# 🎈 Kalkulator Simpel app template
 
 A simple Streamlit app template for you to modify!
 
@@ -17,3 +17,5 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+
+Sumber belajar: https://youtu.be/orVQUwYPiBE
