@@ -35,5 +35,5 @@ elif operation == "Pembagian":
     result = divide(num1, num2)
 
 if st.button("Hitung"):
-    st.success(f"Hasil: {hasil}")
+    st.success(f"Hasil: {result}")
   
