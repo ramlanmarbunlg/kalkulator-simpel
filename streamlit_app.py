@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("_Kalkulator_ :blue[Sederhana] :sunglasses:")
+st.title("_Kalkulator_ :blue[Sederhana] :rocket:")
 
 # Definisikan fungsi untuk penjumlahan
 def add(x, y):
